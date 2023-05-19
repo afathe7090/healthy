@@ -15,6 +15,11 @@
 		027DDA402A0E6A680052818C /* HealthyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DDA3F2A0E6A680052818C /* HealthyUITests.swift */; };
 		027DDA422A0E6A680052818C /* HealthyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027DDA412A0E6A680052818C /* HealthyUITestsLaunchTests.swift */; };
 		6DDA138D2A1109E8004390D4 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 6DDA138C2A1109E8004390D4 /* Factory */; };
+		748DD3EF2A17F9C300E47FB6 /* UILabelStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DD3EE2A17F9C300E47FB6 /* UILabelStyleTests.swift */; };
+		748DD3F42A17F9D500E47FB6 /* UILabelSubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DD3F12A17F9D500E47FB6 /* UILabelSubtitleStyle.swift */; };
+		748DD3F52A17F9D500E47FB6 /* UILabelTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DD3F22A17F9D500E47FB6 /* UILabelTitleStyle.swift */; };
+		748DD3F62A17F9D500E47FB6 /* UILabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DD3F32A17F9D500E47FB6 /* UILabelStyle.swift */; };
+		748DD3F82A17F9E200E47FB6 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748DD3F72A17F9E200E47FB6 /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		027DDA3B2A0E6A680052818C /* HealthyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		027DDA3F2A0E6A680052818C /* HealthyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyUITests.swift; sourceTree = "<group>"; };
 		027DDA412A0E6A680052818C /* HealthyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		748DD3EE2A17F9C300E47FB6 /* UILabelStyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStyleTests.swift; sourceTree = "<group>"; };
+		748DD3F12A17F9D500E47FB6 /* UILabelSubtitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelSubtitleStyle.swift; sourceTree = "<group>"; };
+		748DD3F22A17F9D500E47FB6 /* UILabelTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelTitleStyle.swift; sourceTree = "<group>"; };
+		748DD3F32A17F9D500E47FB6 /* UILabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStyle.swift; sourceTree = "<group>"; };
+		748DD3F72A17F9E200E47FB6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		F39D440C2A14AD810039AEF8 /* UIImage.Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.Generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +117,7 @@
 		027DDA342A0E6A680052818C /* HealthyTests */ = {
 			isa = PBXGroup;
 			children = (
+				748DD3EE2A17F9C300E47FB6 /* UILabelStyleTests.swift */,
 				027DDA352A0E6A680052818C /* HealthyTests.swift */,
 			);
 			path = HealthyTests;
@@ -149,7 +160,8 @@
 		027DDA502A0E75E60052818C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				79B65D272A0FB4310042CC46 /* UIButton+Style.swift */,
+				748DD3F02A17F9D500E47FB6 /* Styles */,
+				748DD3F72A17F9E200E47FB6 /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -204,6 +216,16 @@
 			children = (
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		748DD3F02A17F9D500E47FB6 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				748DD3F12A17F9D500E47FB6 /* UILabelSubtitleStyle.swift */,
+				748DD3F22A17F9D500E47FB6 /* UILabelTitleStyle.swift */,
+				748DD3F32A17F9D500E47FB6 /* UILabelStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		F39D440B2A14ACE30039AEF8 /* Generated */ = {
@@ -392,10 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B65D282A0FB4310042CC46 /* UIButton+Style.swift in Sources */,
+				748DD3F42A17F9D500E47FB6 /* UILabelSubtitleStyle.swift in Sources */,
 				027DDA1F2A0E6A660052818C /* AppDelegate.swift in Sources */,
-				F39D440D2A14AD810039AEF8 /* UIImage.Generated.swift in Sources */,
+				748DD3F82A17F9E200E47FB6 /* UILabel+Extension.swift in Sources */,
+				748DD3F62A17F9D500E47FB6 /* UILabelStyle.swift in Sources */,
 				027DDA212A0E6A660052818C /* SceneDelegate.swift in Sources */,
+				748DD3F52A17F9D500E47FB6 /* UILabelTitleStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748DD3EF2A17F9C300E47FB6 /* UILabelStyleTests.swift in Sources */,
 				027DDA362A0E6A680052818C /* HealthyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
